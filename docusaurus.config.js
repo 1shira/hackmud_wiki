@@ -75,8 +75,8 @@ const config = {
     // Supported and default color modes
     colorMode: {
       defaultMode: "dark",
-      disableSwitch: true,
-      respectPrefersColorScheme: false,
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
     },
     // Theme configuration specific to the docs plugin
     docs: {

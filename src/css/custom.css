@@ -36,6 +36,38 @@ html[data-theme="dark"] {
   --ifm-global-radius: 0;
 }
 
+html[data-theme="light"] {
+  --ifm-color-primary: #161616;
+  --ifm-color-primary-dark: #5796e4;
+  --ifm-color-primary-darker: #060f18;
+  --ifm-color-primary-darkest: #0d59c4;
+  --ifm-color-primary-light: #2f3031;
+  --ifm-color-primary-lighter: #16181a;
+  --ifm-color-primary-lightest: #1a1818;
+  --ifm-background-color: #d8dadf;
+
+  --ifm-color-info-contrast-background: rgba(78, 193, 228, 0.5);
+  --ifm-color-warning-contrast-background: rgba(206, 151, 0, 0.5);
+  --ifm-color-danger-contrast-background: rgba(204, 47, 52, 0.5);
+
+  --ifm-font-family-base: "whiterabbit-webfont";
+  --ifm-navbar-background-color: var(--ifm-background-color);
+  --ifm-footer-background-color: var(--ifm-background-color);
+  --ifm-dropdown-background-color: var(--ifm-background-color);
+  --ifm-card-background-color: var(--ifm-background-color);
+
+  --ifm-link-color: var(--ifm-color-primary);
+
+  --ifm-heading-color: var(--ifm-color-primary-darker);
+  --ifm-color-content: var(--ifm-color-primary);
+  --ifm-link-color: var(--ifm-color-primary-darkest);
+  --ifm-menu-color: var(--ifm-color-primary);
+  --ifm-toc-link-color: var(--ifm-color-primary);
+
+  --ifm-breadcrumb-border-radius: 0;
+  --ifm-global-radius: 0;
+}
+
 .menu__link,
 .menu__list-item-collapsible,
 .dropdown__link {
@@ -54,7 +86,7 @@ a.wikilink-new {
   color: var(--ifm-color-danger);
 }
 
-.main-wrapper {
+.main-wrapper[data-theme="dark"] {
   background-image: repeating-linear-gradient(
     #0e0e0e,
     #0e0e0e 2px,
@@ -62,6 +94,10 @@ a.wikilink-new {
     #101215 4px
   );
   background-size: 100% 4px;
+}
+
+.color-tag {
+  text-shadow: rgb(12, 11, 6) 1px 1px 1px;
 }
 
 .color-tag[data-tag="a"] {
