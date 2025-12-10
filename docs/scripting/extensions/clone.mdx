@@ -1,0 +1,32 @@
+---
+title: "_CLONE"
+---
+
+Global function that returns a deep copy of an object.
+
+## Syntax
+
+```js
+_CLONE(object);
+```
+
+## Arguments
+
+### object
+
+The Object to clone.
+
+## Example
+
+This script wants to clone an object, so it can edit the object, while keeping it's original values:
+
+```js
+function(context, args) {
+  const obj = { foo: { bar: "baz" } }
+  const clone = _CLONE(obj)
+  obj.foo = "baz"
+
+  #D(obj) // {foo:"baz"}
+  #D(clone) // { foo: { bar: "baz" } }
+}
+```
